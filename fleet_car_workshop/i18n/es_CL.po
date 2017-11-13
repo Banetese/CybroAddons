@@ -1,0 +1,875 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* fleet_car_workshop
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0-20161123\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-11-13 22:20+0000\n"
+"PO-Revision-Date: 2017-11-13 19:36-0300\n"
+"Last-Translator: Nelson Ramírez <info@konos.cl>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: es_CL\n"
+"X-Generator: Poedit 2.0.4\n"
+
+#. module: fleet_car_workshop
+#: model:ir.ui.view,arch_db:fleet_car_workshop.car_car_form
+msgid "(Un)archiving a project automatically (un)archives its tasks and issues. Do you want to proceed?"
+msgstr "(Un)archiving a project automatically (un)archives its tasks and issues. Do you want to proceed?"
+
+#. module: fleet_car_workshop
+#: model:ir.ui.view,arch_db:fleet_car_workshop.car_car_form
+msgid "<span attrs=\"{'invisible':[('use_tasks', '=', False)]}\">as </span>"
+msgstr "<span attrs=\"{'invisible':[('use_tasks', '=', False)]}\">como</span>"
+
+#. module: fleet_car_workshop
+#: model:ir.ui.view,arch_db:fleet_car_workshop.view_car_car_kanban
+msgid "<span class=\"o_label\">Documents</span>"
+msgstr "<span class=\"o_label\">Documentos</span>"
+
+#. module: fleet_car_workshop
+#: model:ir.model.fields,help:fleet_car_workshop.field_car_workshop_kanban_state
+msgid ""
+"A task's kanban state indicates special situations affecting it:\n"
+" * Normal is the default situation\n"
+" * Blocked indicates something is preventing the progress of this task\n"
+" * Ready for next stage indicates the task is ready to be pulled to the next stage"
+msgstr ""
+"Estado de una tarea kanban indica situaciones especiales que lo afecta:\n"
+" * Normal es la situación por defecto\n"
+" * Bloqueado indica que algo está impidiendo el progreso de esta tarea\n"
+" * Listo para la siguiente etapa indica que la tarea está lista para ser tirado a la siguiente etapa"
+
+#. module: fleet_car_workshop
+#: model:ir.model.fields,field_description:fleet_car_workshop.field_car_car_active
+#: model:ir.model.fields,field_description:fleet_car_workshop.field_car_workshop_active
+msgid "Active"
+msgstr "Activo"
+
+#. module: fleet_car_workshop
+#: model:ir.ui.view,arch_db:fleet_car_workshop.worksheet_stages_form
+msgid "Add a description..."
+msgstr "Agregar descripción"
+
+#. module: fleet_car_workshop
+#: model:ir.ui.view,arch_db:fleet_car_workshop.view_workshop_config_settings
+msgid "Apply"
+msgstr "Aplicar"
+
+#. module: fleet_car_workshop
+#: model:ir.ui.view,arch_db:fleet_car_workshop.view_car_car_filter
+#: model:ir.ui.view,arch_db:fleet_car_workshop.view_vehicle_search_form
+msgid "Archived"
+msgstr "Archivado"
+
+#. module: fleet_car_workshop
+#: model:ir.model.fields,field_description:fleet_car_workshop.field_car_workshop_user_id
+#: model:ir.ui.view,arch_db:fleet_car_workshop.view_vehicle_search_form
+msgid "Assigned to"
+msgstr "Asignado a"
+
+#. module: fleet_car_workshop
+#: model:ir.model.fields,field_description:fleet_car_workshop.field_car_workshop_date_assign
+msgid "Assigning Date"
+msgstr "Fecha Designada"
+
+#. module: fleet_car_workshop
+#: model:ir.model.fields,field_description:fleet_car_workshop.field_car_workshop_attachment_ids
+msgid "Attachments"
+msgstr "Adjuntos"
+
+#. module: fleet_car_workshop
+#: selection:car.workshop,kanban_state:0
+msgid "Blocked"
+msgstr "Blocked"
+
+#. module: fleet_car_workshop
+#: model:ir.ui.view,arch_db:fleet_car_workshop.view_workshop_config_settings
+#: model:ir.ui.view,arch_db:fleet_car_workshop.worksheet_form_view
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: fleet_car_workshop
+#: selection:car.car,state:0
+msgid "Cancelled"
+msgstr "Cancelada"
+
+#. module: fleet_car_workshop
+#: model:res.request.link,name:fleet_car_workshop.req_link_car
+msgid "Car"
+msgstr "Auto"
+
+#. module: fleet_car_workshop
+#: model:res.request.link,name:fleet_car_workshop.req_link_worksheet
+msgid "Car Worksheet"
+msgstr "Hoja de trabajo"
+
+#. module: fleet_car_workshop
+#: model:ir.model,name:fleet_car_workshop.model_car_workshop
+#: model:ir.ui.menu,name:fleet_car_workshop.main_workshop_menu
+msgid "Car Workshop"
+msgstr "Taller de Autos"
+
+#. module: fleet_car_workshop
+#: model:ir.model.fields,field_description:fleet_car_workshop.field_workshop_config_setting_invoice_journal_type
+msgid "Car Workshop Journal"
+msgstr "Diario de Taller de Autos"
+
+#. module: fleet_car_workshop
+#: model:ir.actions.act_window,help:fleet_car_workshop.worksheet_tags_action
+msgid "Click to add a new tag."
+msgstr "Clic para añadir una nueva etiqueta."
+
+#. module: fleet_car_workshop
+#: model:ir.actions.act_window,help:fleet_car_workshop.workshop_services
+msgid "Click to define a new product."
+msgstr "Haga clic para definir un nuevo producto."
+
+#. module: fleet_car_workshop
+#: selection:car.car,state:0
+msgid "Closed"
+msgstr "Cerrado"
+
+#. module: fleet_car_workshop
+#: model:ir.model.fields,field_description:fleet_car_workshop.field_car_car_color
+#: model:ir.model.fields,field_description:fleet_car_workshop.field_car_workshop_color
+#: model:ir.model.fields,field_description:fleet_car_workshop.field_worksheet_tags_color
+msgid "Color Index"
+msgstr "Índice de colores"
+
+#. module: fleet_car_workshop
+#: model:ir.model.fields,field_description:fleet_car_workshop.field_car_workshop_company_id
+msgid "Company Name"
+msgstr "Nombre de la compañía"
+
+#. module: fleet_car_workshop
+#: model:ir.model.fields,field_description:fleet_car_workshop.field_planned_work_completed
+msgid "Completed"
+msgstr "Completado"
+
+#. module: fleet_car_workshop
+#: model:ir.ui.menu,name:fleet_car_workshop.menu_worksheet_config
+msgid "Configuration"
+msgstr "Configuración"
+
+#. module: fleet_car_workshop
+#: model:ir.ui.view,arch_db:fleet_car_workshop.view_workshop_config_settings
+msgid "Configure Workshop"
+msgstr "Configura Taller"
+
+#. module: fleet_car_workshop
+#: model:ir.ui.view,arch_db:fleet_car_workshop.view_car_car_filter
+#: model:ir.ui.view,arch_db:fleet_car_workshop.view_car_car_tree
+msgid "Contact"
+msgstr "Contacto"
+
+#. module: fleet_car_workshop
+#: model:ir.model.fields,field_description:fleet_car_workshop.field_car_workshop_create_date
+msgid "Create Date"
+msgstr "Fecha de Creación"
+
+#. module: fleet_car_workshop
+#: model:ir.ui.view,arch_db:fleet_car_workshop.worksheet_form_view
+msgid "Create Invoices"
+msgstr "Crear facturas"
+
+#. module: fleet_car_workshop
+#: model:ir.actions.act_window,help:fleet_car_workshop.open_view_vehicle_all
+msgid "Create a new project."
+msgstr "Crear un nuevo proyecto"
+
+#. module: fleet_car_workshop
+#: model:ir.actions.act_window,help:fleet_car_workshop.config_view_vehicle_all
+msgid "Create a new vehicle."
+msgstr "Crear un nuevo auto."
+
+#. module: fleet_car_workshop
+#: model:ir.model.fields,field_description:fleet_car_workshop.field_car_car_create_uid
+#: model:ir.model.fields,field_description:fleet_car_workshop.field_car_workshop_create_uid
+#: model:ir.model.fields,field_description:fleet_car_workshop.field_material_used_create_uid
+#: model:ir.model.fields,field_description:fleet_car_workshop.field_planned_work_create_uid
+#: model:ir.model.fields,field_description:fleet_car_workshop.field_worksheet_stages_create_uid
+#: model:ir.model.fields,field_description:fleet_car_workshop.field_worksheet_tags_create_uid
+#: model:ir.model.fields,field_description:fleet_car_workshop.field_workshop_config_setting_create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: fleet_car_workshop
+#: model:ir.model.fields,field_description:fleet_car_workshop.field_car_car_create_date
+#: model:ir.model.fields,field_description:fleet_car_workshop.field_material_used_create_date
+#: model:ir.model.fields,field_description:fleet_car_workshop.field_planned_work_create_date
+#: model:ir.model.fields,field_description:fleet_car_workshop.field_worksheet_stages_create_date
+#: model:ir.model.fields,field_description:fleet_car_workshop.field_worksheet_tags_create_date
+#: model:ir.model.fields,field_description:fleet_car_workshop.field_workshop_config_setting_create_date
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: fleet_car_workshop
+#: model:ir.model.fields,field_description:fleet_car_workshop.field_car_car_partner_id
+#: model:ir.model.fields,field_description:fleet_car_workshop.field_car_workshop_partner_id
+#: model:ir.ui.view,arch_db:fleet_car_workshop.car_car_form
+msgid "Customer"
+msgstr "Cliente"
+
+#. module: fleet_car_workshop
+#: model:ir.ui.menu,name:fleet_car_workshop.workshop_vehicles
+msgid "Dashboard"
+msgstr "Tablero"
+
+#. module: fleet_car_workshop
+#: model:ir.model.fields,field_description:fleet_car_workshop.field_planned_work_work_date
+#: model:ir.model.fields,field_description:fleet_car_workshop.field_planned_work_work_date2
+msgid "Date"
+msgstr "Fecha"
+
+#. module: fleet_car_workshop
+#: model:ir.model.fields,field_description:fleet_car_workshop.field_car_workshop_date_deadline
+msgid "Deadline"
+msgstr "Fecha límite"
+
+#. module: fleet_car_workshop
+#: model:ir.ui.view,arch_db:fleet_car_workshop.car_workshop_view_kanban
+msgid "Delete"
+msgstr "Borrar"
+
+#. module: fleet_car_workshop
+#: model:ir.model.fields,field_description:fleet_car_workshop.field_car_workshop_description
+#: model:ir.model.fields,field_description:fleet_car_workshop.field_worksheet_stages_description
+#: model:ir.ui.view,arch_db:fleet_car_workshop.worksheet_form_view
+msgid "Description"
+msgstr "Descripción"
+
+#. module: fleet_car_workshop
+#: model:ir.model.fields,field_description:fleet_car_workshop.field_car_car_display_name
+#: model:ir.model.fields,field_description:fleet_car_workshop.field_car_workshop_display_name
+#: model:ir.model.fields,field_description:fleet_car_workshop.field_material_used_display_name
+#: model:ir.model.fields,field_description:fleet_car_workshop.field_planned_work_display_name
+#: model:ir.model.fields,field_description:fleet_car_workshop.field_worksheet_stages_display_name
+#: model:ir.model.fields,field_description:fleet_car_workshop.field_worksheet_tags_display_name
+#: model:ir.model.fields,field_description:fleet_car_workshop.field_workshop_config_setting_display_name
+msgid "Display Name"
+msgstr "Nombre mostrado"
+
+#. module: fleet_car_workshop
+#: model:ir.model.fields,field_description:fleet_car_workshop.field_car_workshop_displayed_image_id
+msgid "Displayed Image"
+msgstr "Imagen visualizada"
+
+#. module: fleet_car_workshop
+#: model:ir.ui.view,arch_db:fleet_car_workshop.car_car_form
+msgid "Documents"
+msgstr "Documentos"
+
+#. module: fleet_car_workshop
+#: model:ir.model.fields,field_description:fleet_car_workshop.field_planned_work_duration
+msgid "Duration"
+msgstr "Duración"
+
+#. module: fleet_car_workshop
+#: model:ir.ui.view,arch_db:fleet_car_workshop.car_workshop_view_kanban
+msgid "Edit Task"
+msgstr "Editar Actividad"
+
+#. module: fleet_car_workshop
+#: model:ir.model.fields,field_description:fleet_car_workshop.field_car_workshop_date_end
+msgid "Ending Date"
+msgstr "Fecha de Finalización"
+
+#. module: fleet_car_workshop
+#: model:ir.model.fields,field_description:fleet_car_workshop.field_planned_work_time_spent
+#: model:ir.ui.view,arch_db:fleet_car_workshop.worksheet_form_view
+msgid "Estimated Time"
+msgstr "Estimated Time"
+
+#. module: fleet_car_workshop
+#: model:ir.model.fields,field_description:fleet_car_workshop.field_car_car_date
+msgid "Expiration Date"
+msgstr "Fecha de caducidad"
+
+#. module: fleet_car_workshop
+#: model:ir.ui.view,arch_db:fleet_car_workshop.worksheet_form_view
+msgid "Extra Info"
+msgstr "Info Extra"
+
+#. module: fleet_car_workshop
+#: model:ir.model.fields,field_description:fleet_car_workshop.field_worksheet_stages_fold
+msgid "Folded in Tasks Pipeline"
+msgstr "Doblado en la Tubería de las Tareas"
+
+#. module: fleet_car_workshop
+#: model:ir.model.fields,help:fleet_car_workshop.field_car_car_label_tasks
+msgid "Gives label to Work on kanban view."
+msgstr "Da etiqueta para trabajo en vista de kanban."
+
+#. module: fleet_car_workshop
+#: model:ir.model.fields,help:fleet_car_workshop.field_car_car_sequence
+msgid "Gives the sequence order when displaying a list of Projects."
+msgstr "Indica el orden de secuencia cuando se muestra una lista de Proyectos."
+
+#. module: fleet_car_workshop
+#: model:ir.model.fields,help:fleet_car_workshop.field_car_workshop_sequence
+msgid "Gives the sequence order when displaying a list of tasks."
+msgstr "Indica el orden de secuencia cuando se muestra una lista de tareas."
+
+#. module: fleet_car_workshop
+#: model:ir.ui.view,arch_db:fleet_car_workshop.view_car_car_filter
+#: model:ir.ui.view,arch_db:fleet_car_workshop.view_vehicle_search_form
+msgid "Group By"
+msgstr "Agrupar por"
+
+#. module: fleet_car_workshop
+#: selection:car.workshop,priority:0
+msgid "High"
+msgstr "Alto"
+
+#. module: fleet_car_workshop
+#: model:ir.model.fields,field_description:fleet_car_workshop.field_car_workshop_effective_hour
+msgid "Hours Spent"
+msgstr "Horas Dedicadas"
+
+#. module: fleet_car_workshop
+#: model:ir.model.fields,field_description:fleet_car_workshop.field_car_car_id
+#: model:ir.model.fields,field_description:fleet_car_workshop.field_car_workshop_id
+#: model:ir.model.fields,field_description:fleet_car_workshop.field_material_used_id
+#: model:ir.model.fields,field_description:fleet_car_workshop.field_planned_work_id
+#: model:ir.model.fields,field_description:fleet_car_workshop.field_worksheet_stages_id
+#: model:ir.model.fields,field_description:fleet_car_workshop.field_worksheet_tags_id
+#: model:ir.model.fields,field_description:fleet_car_workshop.field_workshop_config_setting_id
+msgid "ID"
+msgstr "ID "
+
+#. module: fleet_car_workshop
+#: selection:car.car,state:0 selection:car.workshop,kanban_state:0
+msgid "In Progress"
+msgstr "En Proceso"
+
+#. module: fleet_car_workshop
+#: selection:car.workshop,state:0
+msgid "Invoice Canceled"
+msgstr "Factura Anulada"
+
+#. module: fleet_car_workshop
+#: selection:car.workshop,state:0
+msgid "Invoiced"
+msgstr "Facturado"
+
+#. module: fleet_car_workshop
+#: model:ir.model.fields,field_description:fleet_car_workshop.field_car_workshop_kanban_state
+msgid "Kanban State"
+msgstr "Estado de Kanban"
+
+#. module: fleet_car_workshop
+#: model:ir.model.fields,field_description:fleet_car_workshop.field_car_workshop_write_date
+msgid "Last Modification Date"
+msgstr "Última fecha de modificación"
+
+#. module: fleet_car_workshop
+#: model:ir.model.fields,field_description:fleet_car_workshop.field_car_car___last_update
+#: model:ir.model.fields,field_description:fleet_car_workshop.field_car_workshop___last_update
+#: model:ir.model.fields,field_description:fleet_car_workshop.field_material_used___last_update
+#: model:ir.model.fields,field_description:fleet_car_workshop.field_planned_work___last_update
+#: model:ir.model.fields,field_description:fleet_car_workshop.field_worksheet_stages___last_update
+#: model:ir.model.fields,field_description:fleet_car_workshop.field_worksheet_tags___last_update
+#: model:ir.model.fields,field_description:fleet_car_workshop.field_workshop_config_setting___last_update
+msgid "Last Modified on"
+msgstr "Última modificación en"
+
+#. module: fleet_car_workshop
+#: model:ir.model.fields,field_description:fleet_car_workshop.field_car_workshop_date_last_stage_update
+msgid "Last Stage Update"
+msgstr "Última Actualización de la Etapa"
+
+#. module: fleet_car_workshop
+#: model:ir.model.fields,field_description:fleet_car_workshop.field_car_car_write_uid
+#: model:ir.model.fields,field_description:fleet_car_workshop.field_car_workshop_write_uid
+#: model:ir.model.fields,field_description:fleet_car_workshop.field_material_used_write_uid
+#: model:ir.model.fields,field_description:fleet_car_workshop.field_planned_work_write_uid
+#: model:ir.model.fields,field_description:fleet_car_workshop.field_worksheet_stages_write_uid
+#: model:ir.model.fields,field_description:fleet_car_workshop.field_worksheet_tags_write_uid
+#: model:ir.model.fields,field_description:fleet_car_workshop.field_workshop_config_setting_write_uid
+msgid "Last Updated by"
+msgstr "Última actualización de"
+
+#. module: fleet_car_workshop
+#: model:ir.model.fields,field_description:fleet_car_workshop.field_car_car_write_date
+#: model:ir.model.fields,field_description:fleet_car_workshop.field_material_used_write_date
+#: model:ir.model.fields,field_description:fleet_car_workshop.field_planned_work_write_date
+#: model:ir.model.fields,field_description:fleet_car_workshop.field_worksheet_stages_write_date
+#: model:ir.model.fields,field_description:fleet_car_workshop.field_worksheet_tags_write_date
+#: model:ir.model.fields,field_description:fleet_car_workshop.field_workshop_config_setting_write_date
+msgid "Last Updated on"
+msgstr "Última actualización en"
+
+#. module: fleet_car_workshop
+#: model:ir.model.fields,field_description:fleet_car_workshop.field_car_car_image_medium
+msgid "Logo (medium)"
+msgstr "Logo (medio)"
+
+#. module: fleet_car_workshop
+#: model:ir.model.fields,field_description:fleet_car_workshop.field_material_used_material_id
+msgid "Material id"
+msgstr "Material id"
+
+#. module: fleet_car_workshop
+#: model:ir.ui.view,arch_db:fleet_car_workshop.material_used_tree_view
+msgid "Materials"
+msgstr "Materiales"
+
+#. module: fleet_car_workshop
+#: model:ir.model.fields,field_description:fleet_car_workshop.field_car_workshop_materials_used
+#: model:ir.ui.view,arch_db:fleet_car_workshop.worksheet_form_view
+msgid "Materials Used"
+msgstr "Materiales Utilizados"
+
+#. module: fleet_car_workshop
+#: model:ir.ui.view,arch_db:fleet_car_workshop.view_car_car_kanban
+msgid "More <i class=\"fa fa-caret-down\"/>"
+msgstr "Más <i class=\"fa fa-caret-down\"/>"
+
+#. module: fleet_car_workshop
+#: model:ir.ui.view,arch_db:fleet_car_workshop.view_vehicle_search_form
+msgid "My worksheets"
+msgstr "Hojas de Trabajo"
+
+#. module: fleet_car_workshop
+#: model:ir.model.fields,field_description:fleet_car_workshop.field_worksheet_tags_name
+msgid "Name"
+msgstr "Nombre"
+
+#. module: fleet_car_workshop
+#: selection:car.car,state:0
+#: model:ir.ui.view,arch_db:fleet_car_workshop.view_vehicle_search_form
+msgid "New"
+msgstr "Nuevo"
+
+#. module: fleet_car_workshop
+#: selection:car.workshop,priority:0
+msgid "Normal"
+msgstr "Normal"
+
+#. module: fleet_car_workshop
+#: model:ir.model.fields,field_description:fleet_car_workshop.field_car_car_doc_count
+msgid "Number of documents attached"
+msgstr "Número de Documentos Adjuntados"
+
+#. module: fleet_car_workshop
+#: model:ir.actions.act_window,help:fleet_car_workshop.action_car_workshop_filtered
+#: model:ir.actions.act_window,help:fleet_car_workshop.action_car_workshop_report
+#: model:ir.actions.act_window,help:fleet_car_workshop.worksheet_action_super_button
+msgid "Odoo's car workshop management allows you to manage the pipeline of your work efficiently. You can track progress, discuss on works, attach documents, etc."
+msgstr "Odoo's car workshop management allows you to manage the pipeline of your work efficiently. You can track progress, discuss on works, attach documents, etc."
+
+#. module: fleet_car_workshop
+#: model:ir.ui.view,arch_db:fleet_car_workshop.view_car_car_filter
+msgid "Open"
+msgstr "Abierto"
+
+#. module: fleet_car_workshop
+#: model:ir.actions.act_window,help:fleet_car_workshop.open_view_vehicle_all
+msgid "Organize your activities (plan tasks, track issues, invoice timesheets) for internal, personal or customer projects."
+msgstr "Organize your activities (plan tasks, track issues, invoice timesheets) for internal, personal or customer projects."
+
+#. module: fleet_car_workshop
+#: selection:car.car,state:0
+#: model:ir.ui.view,arch_db:fleet_car_workshop.view_car_car_filter
+msgid "Pending"
+msgstr "Pendiente"
+
+#. module: fleet_car_workshop
+#: model:ir.ui.view,arch_db:fleet_car_workshop.planned_work_form_view
+#: model:ir.ui.view,arch_db:fleet_car_workshop.worksheet_form_view
+msgid "Planned Work"
+msgstr "Trabajo Planeado"
+
+#. module: fleet_car_workshop
+#: model:ir.model.fields,field_description:fleet_car_workshop.field_planned_work_planned_work
+msgid "Planned work"
+msgstr "Trabajo Planeado"
+
+#. module: fleet_car_workshop
+#: model:ir.ui.view,arch_db:fleet_car_workshop.worksheet_form_view
+msgid "Planned/Ordered Work"
+msgstr "Trabajo Planeado/Ordenado"
+
+#. module: fleet_car_workshop
+#: model:ir.model.fields,field_description:fleet_car_workshop.field_car_workshop_planned_works
+msgid "Planned/Ordered Works"
+msgstr "Trabajo Previsto/Ordenado"
+
+#. module: fleet_car_workshop
+#: model:ir.model.fields,field_description:fleet_car_workshop.field_car_workshop_priority
+msgid "Priority"
+msgstr "Prioridad"
+
+#. module: fleet_car_workshop
+#: model:ir.model,name:fleet_car_workshop.model_product_template
+msgid "Product Template"
+msgstr "Plantilla producto"
+
+#. module: fleet_car_workshop
+#: model:ir.model.fields,field_description:fleet_car_workshop.field_material_used_material
+msgid "Products"
+msgstr "Productos"
+
+#. module: fleet_car_workshop
+#: model:ir.ui.view,arch_db:fleet_car_workshop.view_car_workshop_graph
+#: model:ir.ui.view,arch_db:fleet_car_workshop.view_car_workshop_pivot
+msgid "Project Tasks"
+msgstr "Tareas del Proyecto"
+
+#. module: fleet_car_workshop
+#: model:ir.model.fields,field_description:fleet_car_workshop.field_material_used_amount
+msgid "Quantity"
+msgstr "Cantidad"
+
+#. module: fleet_car_workshop
+#: selection:car.workshop,state:0
+msgid "Ready"
+msgstr "Preparado"
+
+#. module: fleet_car_workshop
+#: selection:car.workshop,kanban_state:0
+msgid "Ready for next stage"
+msgstr "Listo para la Siguiente Etapa"
+
+#. module: fleet_car_workshop
+#: model:ir.model.fields,field_description:fleet_car_workshop.field_car_workshop_remaining_hour
+msgid "Remaining Hour"
+msgstr "Hora restante"
+
+#. module: fleet_car_workshop
+#: model:ir.ui.menu,name:fleet_car_workshop.report_worksheet
+msgid "Report"
+msgstr "Informe"
+
+#. module: fleet_car_workshop
+#: model:ir.model.fields,field_description:fleet_car_workshop.field_planned_work_responsible
+msgid "Responsible"
+msgstr "Responsable"
+
+#. module: fleet_car_workshop
+#: model:ir.ui.menu,name:fleet_car_workshop.search_worksheet
+msgid "Search"
+msgstr "Buscar"
+
+#. module: fleet_car_workshop
+#: model:ir.ui.view,arch_db:fleet_car_workshop.view_car_car_filter
+msgid "Search Vehicle"
+msgstr "Buscar Auto"
+
+#. module: fleet_car_workshop
+#: model:ir.ui.view,arch_db:fleet_car_workshop.view_workshop_config_settings
+msgid "Seperate Journal"
+msgstr "Diario Independiente"
+
+#. module: fleet_car_workshop
+#: model:ir.model.fields,field_description:fleet_car_workshop.field_car_car_sequence
+#: model:ir.model.fields,field_description:fleet_car_workshop.field_car_workshop_sequence
+#: model:ir.model.fields,field_description:fleet_car_workshop.field_worksheet_stages_sequence
+msgid "Sequence"
+msgstr "Secuencia"
+
+#. module: fleet_car_workshop
+#: model:ir.model.fields,field_description:fleet_car_workshop.field_planned_work_work_cost
+msgid "Service Cost"
+msgstr "Costo del Servicio"
+
+#. module: fleet_car_workshop
+#: model:ir.actions.act_window,name:fleet_car_workshop.workshop_services
+#: model:ir.ui.menu,name:fleet_car_workshop.menu_workshop_product_services
+msgid "Service-Products"
+msgstr "Servicio-Productos"
+
+#. module: fleet_car_workshop
+#: model:ir.actions.act_window,name:fleet_car_workshop.action_workshop_config_settings
+#: model:ir.ui.menu,name:fleet_car_workshop.menu_workshop_config_settings_act
+#: model:ir.ui.view,arch_db:fleet_car_workshop.car_car_form
+#: model:ir.ui.view,arch_db:fleet_car_workshop.view_car_car_kanban
+msgid "Settings"
+msgstr "Configuración"
+
+#. module: fleet_car_workshop
+#: model:ir.model.fields,field_description:fleet_car_workshop.field_car_workshop_stage_id
+#: model:ir.ui.view,arch_db:fleet_car_workshop.view_vehicle_search_form
+msgid "Stage"
+msgstr "Etapa"
+
+#. module: fleet_car_workshop
+#: model:mail.message.subtype,name:fleet_car_workshop.mt_task_stage
+msgid "Stage Changed"
+msgstr "Etapa Cambió"
+
+#. module: fleet_car_workshop
+#: model:ir.model.fields,field_description:fleet_car_workshop.field_worksheet_stages_name
+msgid "Stage Name"
+msgstr "Nombre de la Etapa"
+
+#. module: fleet_car_workshop
+#: model:mail.message.subtype,description:fleet_car_workshop.mt_task_stage
+msgid "Stage changed"
+msgstr "Etapa Cambió"
+
+#. module: fleet_car_workshop
+#: model:ir.actions.act_window,name:fleet_car_workshop.worksheet_stages_action
+#: model:ir.ui.menu,name:fleet_car_workshop.menu_worksheet_stages_action
+msgid "Stages"
+msgstr "Etapas"
+
+#. module: fleet_car_workshop
+#: model:ir.model.fields,field_description:fleet_car_workshop.field_car_car_date_start
+msgid "Start Date"
+msgstr "Fecha inicial"
+
+#. module: fleet_car_workshop
+#: model:ir.model.fields,field_description:fleet_car_workshop.field_car_workshop_date_start
+msgid "Starting Date"
+msgstr "Fecha Inicial"
+
+#. module: fleet_car_workshop
+#: model:ir.model.fields,field_description:fleet_car_workshop.field_car_car_state
+#: model:ir.model.fields,field_description:fleet_car_workshop.field_car_workshop_state
+msgid "Status"
+msgstr "Estado"
+
+#. module: fleet_car_workshop
+#: sql_constraint:worksheet.tags:0
+msgid "Tag name already exists !"
+msgstr "¡El nombre de etiqueta ya existe!"
+
+#. module: fleet_car_workshop
+#: model:ir.actions.act_window,name:fleet_car_workshop.worksheet_tags_action
+#: model:ir.model.fields,field_description:fleet_car_workshop.field_car_workshop_tag_ids
+#: model:ir.ui.menu,name:fleet_car_workshop.menu_worksheet_tags_act
+#: model:ir.ui.view,arch_db:fleet_car_workshop.worksheet_tags_form_view
+msgid "Tags"
+msgstr "Etiquetas"
+
+#. module: fleet_car_workshop
+#: model:ir.model,name:fleet_car_workshop.model_worksheet_tags
+msgid "Tags of vehicles's tasks, issues..."
+msgstr "Etiquetas de tareas de autos, problemas..."
+
+#. module: fleet_car_workshop
+#: model:ir.model.fields,field_description:fleet_car_workshop.field_car_car_worksheet
+msgid "Task Activities"
+msgstr "Actividades de tarea"
+
+#. module: fleet_car_workshop
+#: model:mail.message.subtype,name:fleet_car_workshop.mt_project_task_blocked
+#: model:mail.message.subtype,name:fleet_car_workshop.mt_task_blocked
+msgid "Task Blocked"
+msgstr "Tarea Bloqueada"
+
+#. module: fleet_car_workshop
+#: model:mail.message.subtype,name:fleet_car_workshop.mt_project_task_new
+#: model:mail.message.subtype,name:fleet_car_workshop.mt_task_new
+msgid "Task Opened"
+msgstr "Tarea Abierta"
+
+#. module: fleet_car_workshop
+#: model:mail.message.subtype,name:fleet_car_workshop.mt_project_task_ready
+#: model:mail.message.subtype,name:fleet_car_workshop.mt_task_ready
+msgid "Task Ready"
+msgstr "Tarea Lista"
+
+#. module: fleet_car_workshop
+#: model:ir.ui.view,arch_db:fleet_car_workshop.worksheet_stages_tree
+msgid "Task Stage"
+msgstr "Etapa de Tarea"
+
+#. module: fleet_car_workshop
+#: model:mail.message.subtype,name:fleet_car_workshop.mt_project_task_stage
+msgid "Task Stage Changed"
+msgstr "Etapa Cambió"
+
+#. module: fleet_car_workshop
+#: model:mail.message.subtype,description:fleet_car_workshop.mt_task_blocked
+msgid "Task blocked"
+msgstr "Tarea Bloqueada"
+
+#. module: fleet_car_workshop
+#: model:ir.model.fields,field_description:fleet_car_workshop.field_car_car_task_ids
+msgid "Task ids"
+msgstr "Ida de Tarea"
+
+#. module: fleet_car_workshop
+#: model:mail.message.subtype,description:fleet_car_workshop.mt_task_new
+msgid "Task opened"
+msgstr "Tarea Abierta"
+
+#. module: fleet_car_workshop
+#: model:mail.message.subtype,description:fleet_car_workshop.mt_task_ready
+msgid "Task ready for Next Stage"
+msgstr "Tarea lista para la Siguiente Etapa"
+
+#. module: fleet_car_workshop
+#: model:ir.model.fields,field_description:fleet_car_workshop.field_car_car_task_count
+#: model:ir.model.fields,field_description:fleet_car_workshop.field_car_car_use_tasks
+#: model:ir.ui.view,arch_db:fleet_car_workshop.car_car_form
+#: model:ir.ui.view,arch_db:fleet_car_workshop.view_vehicle_search_form
+#: model:ir.ui.view,arch_db:fleet_car_workshop.worksheet_calender_view
+msgid "Tasks"
+msgstr "Tareas"
+
+#. module: fleet_car_workshop
+#: model:ir.model.fields,help:fleet_car_workshop.field_worksheet_stages_fold
+msgid "This stage is folded in the kanban view when there are no records in that stage to display."
+msgstr "Esta etapa se pliega en la vista Kanban cuando no hay registros para mostrar."
+
+#. module: fleet_car_workshop
+#: model:ir.ui.view,arch_db:fleet_car_workshop.worksheet_form_view
+msgid "Timesheets"
+msgstr "Hojas de Tiempo"
+
+#. module: fleet_car_workshop
+#: model:ir.model.fields,field_description:fleet_car_workshop.field_car_workshop_name
+msgid "Title"
+msgstr "Título"
+
+#. module: fleet_car_workshop
+#: model:ir.ui.view,arch_db:fleet_car_workshop.worksheet_form_view
+msgid "Title..."
+msgstr "Título..."
+
+#. module: fleet_car_workshop
+#: model:ir.model.fields,field_description:fleet_car_workshop.field_car_workshop_amount_total
+msgid "Total Amount"
+msgstr "Monto Total"
+
+#. module: fleet_car_workshop
+#: model:ir.ui.view,arch_db:fleet_car_workshop.view_vehicle_search_form
+msgid "Unassigned"
+msgstr "No Asignado"
+
+#. module: fleet_car_workshop
+#: model:ir.model.fields,field_description:fleet_car_workshop.field_material_used_price
+msgid "Unit Price"
+msgstr "Precio un."
+
+#. module: fleet_car_workshop
+#: model:ir.ui.view,arch_db:fleet_car_workshop.car_car_form
+msgid "Use Tasks"
+msgstr "Use Tareas"
+
+#. module: fleet_car_workshop
+#: model:ir.model.fields,field_description:fleet_car_workshop.field_car_car_label_tasks
+msgid "Use Tasks as"
+msgstr "Use Tareas como"
+
+#. module: fleet_car_workshop
+#: model:ir.ui.view,arch_db:fleet_car_workshop.worksheet_form_view
+msgid "User"
+msgstr "Usuario"
+
+#. module: fleet_car_workshop
+#: model:ir.model,name:fleet_car_workshop.model_car_car
+#: model:ir.model.fields,field_description:fleet_car_workshop.field_worksheet_stages_vehicle_ids
+msgid "Vechicles"
+msgstr "Autos"
+
+#. module: fleet_car_workshop
+#: model:ir.model.fields,field_description:fleet_car_workshop.field_car_workshop_vehicle_id
+#: model:ir.ui.view,arch_db:fleet_car_workshop.car_car_form
+#: model:ir.ui.view,arch_db:fleet_car_workshop.view_vehicle_search_form
+msgid "Vehicle"
+msgstr "Auto"
+
+#. module: fleet_car_workshop
+#: model:ir.model.fields,field_description:fleet_car_workshop.field_car_car_name
+#: model:ir.ui.view,arch_db:fleet_car_workshop.car_car_form
+#: model:ir.ui.view,arch_db:fleet_car_workshop.view_car_car_filter
+#: model:ir.ui.view,arch_db:fleet_car_workshop.view_car_car_tree
+msgid "Vehicle Name"
+msgstr "Nombre del Auto"
+
+#. module: fleet_car_workshop
+#: model:ir.actions.act_window,name:fleet_car_workshop.config_view_vehicle_all
+#: model:ir.actions.act_window,name:fleet_car_workshop.open_view_vehicle_all
+#: model:ir.ui.menu,name:fleet_car_workshop.config_vehicle_view_action
+#: model:ir.ui.view,arch_db:fleet_car_workshop.view_car_car_tree
+msgid "Vehicles"
+msgstr "Autos"
+
+#. module: fleet_car_workshop
+#: model:ir.ui.view,arch_db:fleet_car_workshop.worksheet_stages_form
+msgid "Vehicles using this stage"
+msgstr "Autos usando esta etapa"
+
+#. module: fleet_car_workshop
+#: model:ir.model.fields,field_description:fleet_car_workshop.field_car_workshop_works_done
+#: model:ir.ui.view,arch_db:fleet_car_workshop.material_used_form_view
+#: model:ir.ui.view,arch_db:fleet_car_workshop.worksheet_form_view
+msgid "Work Done"
+msgstr "Trabajo Hecho"
+
+#. module: fleet_car_workshop
+#: model:ir.model.fields,field_description:fleet_car_workshop.field_planned_work_work_id
+msgid "Work id"
+msgstr "Id de Trabajo"
+
+#. module: fleet_car_workshop
+#: model:ir.model.fields,field_description:fleet_car_workshop.field_car_workshop_progress
+msgid "Working Time Progress(%)"
+msgstr "Progreso de Tiempo de Trabajo"
+
+#. module: fleet_car_workshop
+#: model:ir.ui.menu,name:fleet_car_workshop.vehicle_report
+#: model:ir.ui.menu,name:fleet_car_workshop.vehicle_works
+#: model:ir.ui.view,arch_db:fleet_car_workshop.view_vehicle_search_form
+#: model:ir.ui.view,arch_db:fleet_car_workshop.worksheet_form_view
+#: model:ir.ui.view,arch_db:fleet_car_workshop.worksheet_tree_view
+msgid "Worksheet"
+msgstr "Hoja de Trabajo"
+
+#. module: fleet_car_workshop
+#: model:ir.model.fields,field_description:fleet_car_workshop.field_car_car_type_ids
+#: model:ir.ui.view,arch_db:fleet_car_workshop.worksheet_stages_form
+msgid "Worksheet Stages"
+msgstr "Etapas Hoja de Trabajo"
+
+#. module: fleet_car_workshop
+#: model:ir.actions.act_window,name:fleet_car_workshop.action_car_workshop_filtered
+#: model:ir.actions.act_window,name:fleet_car_workshop.action_car_workshop_report
+#: model:ir.actions.act_window,name:fleet_car_workshop.worksheet_action_super_button
+msgid "Worksheets"
+msgstr "Hojas de Trabajo"
+
+#. module: fleet_car_workshop
+#: model:ir.ui.view,arch_db:fleet_car_workshop.worksheet_stages_form
+msgid "You can also add a description to help your co-workers understand the meaning and purpose of the stage."
+msgstr "You can also add a description to help your co-workers understand the meaning and purpose of the stage."
+
+#. module: fleet_car_workshop
+#: model:ir.model,name:fleet_car_workshop.model_material_used
+msgid "material.used"
+msgstr "material.used"
+
+#. module: fleet_car_workshop
+#: model:ir.ui.view,arch_db:fleet_car_workshop.car_workshop_view_kanban
+msgid "oe_kanban_text_red"
+msgstr "oe_kanban_text_red"
+
+#. module: fleet_car_workshop
+#: model:ir.model,name:fleet_car_workshop.model_planned_work
+msgid "planned.work"
+msgstr "planned.work"
+
+#. module: fleet_car_workshop
+#: model:ir.ui.view,arch_db:fleet_car_workshop.view_vehicle_search_form
+msgid "worksheet"
+msgstr "ficha de trabajo"
+
+#. module: fleet_car_workshop
+#: model:ir.model,name:fleet_car_workshop.model_worksheet_stages
+msgid "worksheet Stage"
+msgstr "Etapa de Hoja de Trabajo"
+
+#. module: fleet_car_workshop
+#: model:ir.model,name:fleet_car_workshop.model_workshop_config_setting
+msgid "workshop.config.setting"
+msgstr "workshop.config.setting"
