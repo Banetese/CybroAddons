@@ -36,6 +36,9 @@ class PlannedWork (models.Model):
     completed = fields.Boolean(string="Completed")
     duration = fields.Float(string='Duration')
     work_date2 = fields.Datetime(string='Date')  # Date of work completed/done:completed date
+    _defaults = {
+                'type': 'service', }
+
 
     @api.onchange('planned_work')
     def get_price(self):

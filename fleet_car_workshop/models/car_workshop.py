@@ -26,6 +26,7 @@ from odoo.exceptions import UserError
 from odoo import models, api, fields, _
 
 
+
 class CarWorkshop(models.Model):
     _name = 'car.workshop'
     _description = "Car Workshop"
@@ -114,6 +115,7 @@ class CarWorkshop(models.Model):
     @api.multi
     def workshop_create_invoices(self):
 
+
         self.state = 'workshop_create_invoices'
         inv_obj = self.env['account.invoice']
         inv_line_obj = self.env['account.invoice.line']
@@ -131,6 +133,7 @@ class CarWorkshop(models.Model):
         if not journal_id:
             journal_id = 1
 
+
         inv_data = {
             'name': customer.name,
             'reference': customer.name,
@@ -141,6 +144,7 @@ class CarWorkshop(models.Model):
             'origin': self.name,
             'company_id': company_id.id,
         }
+        
         inv_id = inv_obj.create(inv_data)
         for records in self.planned_works:
             if records.planned_work.id :
@@ -148,16 +152,23 @@ class CarWorkshop(models.Model):
             if not income_account:
                 raise UserError(_('There is no income account defined for this product: "%s".') %
                                 (records.planned_work.name,))
-
+            if not records.planned_work:
+                raise UserError(_('There is no Product: "%s".') %
+                                (records.planned_work.name,))
             inv_line_data = {
-                'name': records.planned_work.name,
-                'account_id': income_account,
-                'price_unit': records.work_cost,
-                'quantity': 1,
-                'product_id': records.planned_work.id,
-                'invoice_id': inv_id.id,
-            }
-            inv_line_obj.create(inv_line_data)
+                    'name': records.planned_work.name,
+                    'account_id': income_account,
+                    'price_unit': records.work_cost,
+                    'quantity': 1,
+                    'product_id': records.planned_work.id,
+                    'invoice_id': inv_id.id,
+            }  
+
+            try:  
+                inv_line_obj.create(inv_line_data)
+            except:
+                raise UserError(_('Error in Service: "%s". Please select another one') %
+                                (records.planned_work.name,))
 
         for records in self.materials_used:
             if records.material.id :
@@ -168,13 +179,20 @@ class CarWorkshop(models.Model):
 
             inv_line_data = {
                 'name': records.material.name,
-                'account_id': records.material.property_account_income_id.id,
+                'account_id': income_account,
                 'price_unit': records.price,
                 'quantity': records.amount,
                 'product_id': records.material.id,
                 'invoice_id': inv_id.id,
             }
-            inv_line_obj.create(inv_line_data)
+
+            try:          
+                inv_line_obj.create(inv_line_data)
+            except:
+                raise UserError(_('Error in Material: "%s". Please select another one') %
+                                (records.material.name,))
+
+
 
         imd = self.env['ir.model.data']
         action = imd.xmlid_to_object('account.action_invoice_tree1')
@@ -191,6 +209,7 @@ class CarWorkshop(models.Model):
             'context': action.context,
             'res_model': 'account.invoice',
         }
+        
         if len(inv_id) > 1:
             result['domain'] = "[('id','in',%s)]" % inv_id.ids
         elif len(inv_id) == 1:
@@ -206,6 +225,7 @@ class CarWorkshop(models.Model):
             invoiced_date = invoiced_date[0:10]
             if invoiced_date == str(date.today()):
                 total = total + rows.price_subtotal
+        
         return result
 
     @api.depends('works_done.duration')
