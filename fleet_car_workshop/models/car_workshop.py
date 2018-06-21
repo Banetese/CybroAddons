@@ -147,6 +147,9 @@ class CarWorkshop(models.Model):
         
         inv_id = inv_obj.create(inv_data)
         for records in self.planned_works:
+            no_product = self.env['product.product'].search([('default_code', '=', 'SERV001')], limit=1)
+            product = self.env['product.product'].search([('id', '=', records.planned_work.id)], limit=1)
+
             if records.planned_work.id :
                 income_account = records.planned_work.property_account_income_id.id
             if not income_account:
@@ -155,36 +158,63 @@ class CarWorkshop(models.Model):
             if not records.planned_work:
                 raise UserError(_('There is no Product: "%s".') %
                                 (records.planned_work.name,))
-            inv_line_data = {
+
+            if product:
+                inv_line_data = {
                     'name': records.planned_work.name,
                     'account_id': income_account,
                     'price_unit': records.work_cost,
                     'quantity': 1,
                     'product_id': records.planned_work.id,
                     'invoice_id': inv_id.id,
-            }  
+                } 
+            else:
+                inv_line_data = {
+                    'name': records.planned_work.name,
+                    'account_id': income_account,
+                    'price_unit': records.work_cost,
+                    'quantity': 1,
+                    'product_id': no_product.id,
+                    'invoice_id': inv_id.id,
+                } 
 
-            try:  
+            try: 
                 inv_line_obj.create(inv_line_data)
-            except:
+            except:  
                 raise UserError(_('Error in Service: "%s". Please select another one') %
                                 (records.planned_work.name,))
 
+
+
         for records in self.materials_used:
+            no_product = self.env['product.product'].search([('default_code', '=', 'MAT001')], limit=1)
+            product = self.env['product.product'].search([('id', '=', records.material.id)], limit=1)
+
             if records.material.id :
                 income_account = records.material.property_account_income_id.id
             if not income_account:
                 raise UserError(_('There is no income account defined for this product: "%s".') %
                                 (records.material.name,))
 
-            inv_line_data = {
-                'name': records.material.name,
-                'account_id': income_account,
-                'price_unit': records.price,
-                'quantity': records.amount,
-                'product_id': records.material.id,
-                'invoice_id': inv_id.id,
-            }
+
+            if product:
+                inv_line_data = {
+                    'name': records.material.name,
+                    'account_id': income_account,
+                    'price_unit': records.price,
+                    'quantity': records.amount,
+                    'product_id': records.material.id,
+                    'invoice_id': inv_id.id,
+                } 
+            else:
+                inv_line_data = {
+                    'name': records.material.name,
+                    'account_id': income_account,
+                    'price_unit': records.price,
+                    'quantity': records.amount,
+                    'product_id': no_product.id,
+                    'invoice_id': inv_id.id,
+                } 
 
             try:          
                 inv_line_obj.create(inv_line_data)
