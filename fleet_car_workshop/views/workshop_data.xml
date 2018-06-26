@@ -73,5 +73,25 @@
             <field name="parent_id" eval="ref('mt_task_stage')"/>
             <field name="relation_field">vehicle_id</field>
         </record>
+
+        <record id="mano_de_obra" model="product.template">
+            <field name="name">MANO DE OBRA</field>
+            <field name="default_code">SERV001</field>
+            <field name="lst_price">0</field>
+            <field name="taxes_id" eval="False" />
+            <field name="supplier_taxes_id" eval="False" />
+            <field name="sale_ok" eval="True" />
+            <field name="purchase_ok" eval="False" />
+        </record>
+
+        <record id="materiales" model="product.template">
+            <field name="name">MATERIALES</field>
+            <field name="default_code">MAT001</field>
+            <field name="lst_price">0</field>
+            <field name="taxes_id" eval="False" />
+            <field name="supplier_taxes_id" eval="False" />
+            <field name="sale_ok" eval="True" />
+            <field name="purchase_ok" eval="False" />
+        </record>
     </data>
 </odoo>
